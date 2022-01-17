@@ -1,0 +1,104 @@
+:root {
+    --lightBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body {
+    background-color: var(--mainBG);
+    font-family: 'Outfit', sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    color: var(--lightBlue);
+}
+
+.card {
+    background-color: var(--cardBG);
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 15em;
+}
+
+.nft {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 a{
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.description {
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+.total {
+    color: var(--cyan);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.total h2 {
+    font-weight: 400;
+}
+
+.time {
+    color: var(--lightBlue);
+}
+
+footer {
+    border-top: 1px solid var(--line);
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+footer img{
+    width: 1.9em;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.attribution , .attribution a{ 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 2em;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
